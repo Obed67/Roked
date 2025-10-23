@@ -1,346 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/custom-tailwind.css">
+    <link rel="stylesheet" href="css/custom-tailwind.css" />
     <!--icon-->
-    <script src="https://kit.fontawesome.com/bdd2d663d9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script
+      src="https://kit.fontawesome.com/bdd2d663d9.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': '#33CC00',
-                    },
-                    fontFamily: {
-                        'exo': ['Exo', 'sans-serif'],
-                        'open-sans': ['Open Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#33CC00",
+            },
+            fontFamily: {
+              exo: ["Exo", "sans-serif"],
+              "open-sans": ["Open Sans", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
- </head>
-<body>
-  <!-- navbar -->
-  <nav class="bg-transparent">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-            <a class="flex-shrink-0" href="index.html">
-                <img src="images/logo.png" alt="logo" class="h-12">
+  </head>
+  <body>
+    <!-- navbar placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!--Container-->
+
+    <div class="max-w-screen-xl mx-auto px-4">
+      <h3 class="font-bold my-3">Blog</h3>
+      <header class="blog-header py-3">
+        <div class="flex flex-wrap justify-between items-center nav-border">
+          <div class="w-full md:w-2/3">
+            <div class="nav-scroller">
+              <nav class="nav flex justify-between">
+                <a class="text-gray-500 link-no-line first-link" href="#">
+                  All
+                </a>
+                <a class="other-link text-gray-500 link-no-line" href="#"
+                  >Trending</a
+                >
+                <a class="other-link text-muted link-no-line" href="#"
+                  >Business</a
+                >
+                <a class="other-link text-muted link-no-line" href="#"
+                  >Productivity</a
+                >
+                <a class="other-link text-muted link-no-line" href="#"
+                  >Technology</a
+                >
+                <a class="other-link text-muted link-no-line" href="#"
+                  >Lifestyle</a
+                >
+              </nav>
+            </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mx-3"
+              >
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+              </svg>
             </a>
-            
-            <!-- Mobile menu button -->
-            <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+          </div>
+        </div>
+        <hr />
+      </header>
+
+      <div class="row text-white">
+        <div class="col-md-8 position-relative">
+          <img
+            src="images/article1.jpg"
+            alt="about first"
+            class="rounded position-relative"
+            width="98%"
+          />
+          <h6 class="position-absolute bottom-0 start-0 bottom-left">
+            <a href="#" class="text-white"
+              >10 Tips how to increase your passive income</a
+            >
+          </h6>
+          <div class="py-3"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="position-relative">
+            <img
+              src="images/article2.jpg"
+              alt="about second"
+              class="rounded mb-3"
+              width="96%"
+            />
+            <h6 class="position-absolute bottom-0 start-0 bottom-left">
+              <a href="#" class="link-no-line text-white"
+                >Don’t forget to backup your data today</a
+              >
+            </h6>
+          </div>
+          <div class="position-relative">
+            <img
+              src="images/article3.jpg"
+              alt="about second"
+              class="rounded mb-3"
+              width="96%"
+            />
+            <h6 class="position-absolute bottom-0 start-0 bottom-left">
+              <a href="#" class="link-no-line text-white"
+                >How to be a great leader in Big team</a
+              >
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-3"></div>
+
+    <!--trending-->
+    <div class="bg-about">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <h4 class="font-bold my-5">Trending</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  3 Elements of a Successful Digital Transformation Strategy
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
             </div>
+          </div>
 
-            <!-- Desktop menu -->
-            <div class="hidden md:flex md:items-center md:space-x-8">
-                <a href="about.html" class="text-gray-700 hover:text-primary transition-colors font-medium">About</a>
-                
-                <div class="relative group">
-                    <a href="services.html" class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center">
-                        Services
-                        <i class="fa fa-angle-down ml-1"></i>
-                    </a>
-                    <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Service 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Service 2</a>
-                    </div>
-                </div>
-                
-                <a href="team.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Team</a>
-                <a href="testimonial.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Testimonial</a>
-                <a href="blog.html" class="text-gray-700 hover:text-primary transition-colors font-medium">Blog</a>
-                <a href="contact.html" class="btn-outline-primary px-6 py-2 rounded-md font-medium transition-all duration-300">CONTACT US</a>
-                
-                <div class="relative group ml-4">
-                    <button class="text-gray-700 hover:text-primary transition-colors font-medium flex items-center">
-                        EN
-                        <i class="fa fa-angle-down ml-1"></i>
-                    </button>
-                    <div class="absolute top-full right-0 mt-1 w-20 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">FR</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">EN</a>
-                    </div>
-                </div>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  Top 10 Digital Transformation Trends for 2020
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
             </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 bg-white rounded-md shadow-lg mt-2">
-                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">About</a>
-                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Services</a>
-                <a href="team.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Team</a>
-                <a href="testimonial.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Testimonial</a>
-                <a href="blog.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Blog</a>
-                <a href="contact.html" class="block px-3 py-2 text-primary border border-primary rounded-md text-center mx-2">CONTACT US</a>
+          </div>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  7 Tips to Make Your Digital Brand More Recognizable
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
             </div>
-        </div>
-    </div>
-  </nav>
-
-  <!--Container-->
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="font-bold my-12 text-3xl">Blog</h3>
-    <header class="blog-header py-3">
-      <div class="flex flex-wrap justify-between items-center border-b border-gray-200 pb-4">
-        <div class="w-full md:w-auto">
-          <nav class="flex flex-wrap justify-between md:justify-start md:space-x-8">
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline font-medium" href="#"> All </a>
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline" href="#">Trending</a>
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline" href="#">Business</a>
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline" href="#">Productivity</a>
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline" href="#">Technology</a>
-            <a class="text-gray-600 hover:text-primary transition-colors no-underline" href="#">Lifestyle</a>                
-          </nav>
-        </div>
-        <div class="flex justify-end items-center mt-4 md:mt-0">
-          <a class="text-gray-600 hover:text-primary transition-colors" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-8">
-      <div class="lg:col-span-3 relative">
-          <img src="images/article1.jpg" alt="about first" class="rounded-lg w-full h-80 object-cover">
-          <div class="absolute bottom-4 left-4">
-            <h6 class="text-white text-lg font-semibold"><a href="#" class="text-white hover:text-gray-200 transition-colors">10 Tips how to increase your passive income</a></h6>
-          </div>
-      </div>
-      <div class="lg:col-span-1 space-y-6">
-        <div class="relative">
-          <img src="images/article2.jpg" alt="about second" class="rounded-lg w-full h-36 object-cover">
-          <div class="absolute bottom-2 left-2">
-            <h6 class="text-white text-sm font-semibold"><a href="#" class="text-white hover:text-gray-200 transition-colors no-underline">Don't forget to backup your data today</a></h6>
           </div>
         </div>
-        <div class="relative">
-          <img src="images/article3.jpg" alt="about second" class="rounded-lg w-full h-36 object-cover">
-          <div class="absolute bottom-2 left-2">
-            <h6 class="text-white text-sm font-semibold"><a href="#" class="text-white hover:text-gray-200 transition-colors no-underline">How to be a great leader in Big team</a></h6>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-5">
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  3 Elements of a Successful Digital Transformation Strategy
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
-        </div>             
-      </div>
-    </div>
-  </div>
-  <div class="py-12"></div>
-
-  <!--trending-->
-  <div class="bg-about">
-    <div class="max-w-7xl mx-auto px-4 py-20">
-      <h4 class="font-bold my-20 text-2xl">Trending</h4>
-      
-      <!-- First row of trending articles -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">3 Elements of a Successful Digital Transformation Strategy</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  Top 10 Digital Transformation Trends for 2020
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">Top 10 Digital Transformation Trends for 2020</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
-          </div>
-        </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">7 Tips to Make Your Digital Brand More Recognizable</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Second row of trending articles -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">3 Elements of a Successful Digital Transformation Strategy</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  7 Tips to Make Your Digital Brand More Recognizable
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">Top 10 Digital Transformation Trends for 2020</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  3 Elements of a Successful Digital Transformation Strategy
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">7 Tips to Make Your Digital Brand More Recognizable</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  Top 10 Digital Transformation Trends for 2020
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- Third row of trending articles -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">3 Elements of a Successful Digital Transformation Strategy</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
-          </div>
-        </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">Top 10 Digital Transformation Trends for 2020</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
-          </div>
-        </div>
-        
-        <div class="blog-card-custom">
-          <div class="p-6">
-            <p class="text-sm text-gray-600 py-2">Tom Brick - 21h ago</p>
-            <h5 class="font-semibold text-lg text-gray-900 mb-3">7 Tips to Make Your Digital Brand More Recognizable</h5>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
-            <a href="" class="text-primary hover:text-green-700 transition-colors no-underline py-3">Read more</a>
+          <div class="pb-4">
+            <div class="bg-white rounded-lg shadow-lg h-full">
+              <div class="p-6">
+                <p class="text-gray-600 py-2">Tom Brick - 21h ago</p>
+                <h5 class="text-xl font-semibold mb-3">
+                  7 Tips to Make Your Digital Brand More Recognizable
+                </h5>
+                <p class="text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut ...
+                </p>
+                <a href="" class="color-base link-no-line py-3">Read more</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="py-20"></div>
-  <div class="text-center">
-    <button type="button" class="btn-primary px-8 py-3 rounded-md text-white font-semibold transition-all duration-300 hover:transform hover:-translate-y-1">
-        VIEW MORE 
-        <span class="ml-6">
-            <img src="images/rightArrow.png" alt="next" class="inline w-4 h-4">
-        </span>
-    </button>
-  </div>
-
-  <div class="py-20"></div>
-
-   <!--call to action-->
-   <div class="max-w-7xl mx-auto px-20">
-    <div class="bg-call-to-action rounded-lg overflow-hidden">
-        <div class="py-20 text-center">
-            <h4 class="text-white text-2xl font-semibold pb-4 leading-relaxed">Ready to grow your <br> business with us?</h4>
-            <a href="contact.html" class="inline-flex items-center bg-white text-primary px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">
-                GET STARTED 
-                <span class="ml-6">
-                    <img src="images/rightArrow-green.png" alt="next" class="w-4 h-4">
-                </span>
-            </a>
-        </div>        
+    <div class="py-5"></div>
+    <div class="text-center">
+      <button type="button" class="btn-success text-white px-6 py-3 rounded">
+        VIEW MORE
+        <span class="mx-3"><img src="images/rightArrow.png" alt="next" /></span>
+      </button>
     </div>
-    <div class="py-20"></div>  
-  </div>
-  <div class="py-20"></div>
 
-  <!--Footer-->
-  <hr class="mt-20 border-gray-300">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mt-12">
-        <!-- Company Info -->
-        <div class="md:col-span-2">
-          <a href="index.html" class="inline-block mb-4">
-            <img src="images/logo.png" alt="logo" class="h-12">
-          </a>  
-          <h6 class="text-lg font-semibold mb-2">Your business partner solutions</h6>
-          <p class="text-gray-600 mb-4 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div class="flex items-center mb-3">
-            <img src="images/iconPhone.png" alt="phone 1" class="mr-3 h-6">
-            <p class="text-gray-600">77 Highfield Road London N36 7SB</p>
-          </div>
-          <div class="flex items-center">
-            <img src="images/iconPhone-1.png" alt="phone 2" class="mr-3 h-6">
-            <p class="text-gray-600">412 444 1124</p>
-          </div>
-        </div>
+    <div class="py-5"></div>
 
-        <!-- Quick Links -->
-        <div>
-          <h6 class="font-bold mb-4 text-gray-900">Quick Links</h6>
-          <div class="space-y-2">
-            <p><a href="about.html" class="text-gray-600 hover:text-primary transition-colors no-underline">About us</a></p>
-            <p><a href="contact.html" class="text-gray-600 hover:text-primary transition-colors no-underline">Contact us</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Products</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Login</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Sign up</a></p>
-          </div>
-        </div>
-
-        <!-- Support -->
-        <div>
-          <h6 class="font-bold mb-4 text-gray-900">Support</h6>
-          <div class="space-y-2">
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Affiliates</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Sitemap</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Cancelation policy</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Privacy policy</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Legal Disclaimer</a></p>
-          </div>
-        </div>
-
-        <!-- Services -->
-        <div>
-          <h6 class="font-bold mb-4 text-gray-900">Services</h6>
-          <div class="space-y-2">
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Registered Agent</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Annual Report</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Amandement</a></p>
-            <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Agent</a></p>
+    <!--call to action-->
+    <div class="max-w-screen-xl mx-auto px-4">
+      <div class="bg-white rounded-lg shadow-lg">
+        <div class="bg-call-to-action">
+          <div class="py-5 text-center rounded">
+            <h4 class="text-white pb-2">
+              Ready to grow your <br />
+              business with us?
+            </h4>
+            <a
+              type="button"
+              class="btn-light color-base px-6 py-3 rounded"
+              href="contact.html"
+              role="button"
+              >GET STARTED
+              <span class="mx-3"
+                ><img src="images/rightArrow-green.png" alt="next" /></span
+            ></a>
           </div>
         </div>
       </div>
-      
-      <!-- Additional Resources Section -->
-      <div class="mt-8">
-        <h6 class="font-bold mb-4 text-gray-900">Resources</h6>
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-          <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Filing times</a></p>
-          <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Why choose us</a></p>
-          <p><a href="testimonial.html" class="text-gray-600 hover:text-primary transition-colors no-underline">Testimonials</a></p>
-          <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">LLC State info</a></p>
-          <p><a href="#!" class="text-gray-600 hover:text-primary transition-colors no-underline">Corporation State Info</a></p>
-        </div>
-      </div>
+      <div class="py-5"></div>
     </div>
-    
-    <!-- Copyright -->
-    <div class="text-center py-8 border-t border-gray-200 mt-8">
-        <p class="text-gray-600">Roked.co - © 2020 All Rights Reserved</p>
-    </div>
-      
-  <script src="js/custom.js"></script>
-</body>
+    <div class="py-5"></div>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+    <script src="js/navbar-loader.js"></script>
+    <script src="js/footer-loader.js"></script>
+  </body>
 </html>
